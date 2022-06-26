@@ -1,0 +1,20 @@
+.num {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    font-size: 31px;
+}
+
+.shoes {
+    position: relative;
+    height: 450px;
+    width: 809px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.shoes ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

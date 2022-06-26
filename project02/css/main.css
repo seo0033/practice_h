@@ -1,0 +1,120 @@
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    line-height: 100px;
+    z-index: 1;
+}
+
+header .container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+header .container .right {
+    vertical-align: middle;
+}
+
+header .container h1 {}
+
+.container nav {
+    margin: 0 0 0 auto;
+}
+
+.container nav>ul {
+    display: flex;
+    gap: 40px;
+}
+
+.container .right {
+    margin: 0 0 0 80px;
+}
+
+/* main_visual */
+.main_visual {
+    position: relative;
+}
+
+.main_visual .inner {
+    width: 1200px;
+}
+
+.main_visual .main_slider figure {
+    position: relative;
+    height: 100vh;
+}
+
+.main_visual .itm01 {
+    background: url(../img/visual1.jpg)no-repeat center center/cover;
+}
+
+.main_visual .itm02 {
+    background: url(../img/visual2.jpg)no-repeat center center/cover;
+}
+
+.main_visual .itm03 {
+    background: url(../img/visual3.jpg)no-repeat center center/cover;
+}
+
+.main_visual .itm04 {
+    background: url(../img/visual4.jpg)no-repeat center center/cover;
+}
+
+.main_visual .main_slider .inner {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main_visual .main_slider .inner h2 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+    margin: 0 0 30px 0;
+}
+
+.main_visual .main_slider .inner p {
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+    margin: 0 0 15px 0;
+}
+
+.main_visual .main_slider .inner strong {
+    font-size: 19px;
+    font-weight: 100;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+}
+
+.main_visual .main_arrows {
+    position: absolute;
+    top: 50%;
+    right: 120px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.main_visual .main_arrows i {}
+
+.main_visual .main_arrows ul li {
+    margin: 0 0 20px 0;
+}
+
+.main_visual .main_arrows ul>li~li::before {
+    display: block;
+    content: "";
+    width: 1px;
+    height: 100px;
+    background: #fff;
+    text-align: center;
+    margin: 0 0 20px 0;
+}

@@ -1,0 +1,53 @@
+.Wrap {
+    min-width: 1900px;
+}
+
+main {
+    height: 600px;
+    background: #333;
+}
+
+.header {
+    line-height: 100px;
+}
+
+.header .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header .gnb {
+    margin: 0 0 0 auto;
+}
+
+.header .gnb>ul {
+    display: flex;
+}
+
+.header .gnb>ul li a {
+    display: block;
+    padding: 0 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header .gnb>ul li {
+    position: relative;
+}
+
+.header .gnb>ul ul {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    background: #f9f9f9;
+    border: 3px solid #ddd;
+    line-height: 50px;
+    text-align: center;
+}
+
+.header .gnb>ul>li:hover ul {
+    display: block;
+}

@@ -1,0 +1,137 @@
+img {
+    max-width: 100%;
+}
+
+.main {
+    position: relative;
+}
+
+.main .slider01 figure {
+    height: 600px;
+}
+
+.main .slider01 .img01 {
+    background: url(../img/mainvisual01.jpg)no-repeat center center/cover;
+}
+
+.main .slider01 .img02 {
+    background: url(../img/mainvisual02.jpg)no-repeat center center/cover;
+}
+
+.main .slider01 .img03 {
+    background: url(../img/mainvisual03.jpg)no-repeat center center/cover;
+}
+
+.main .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.slogan h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+.slogan p {
+    font-size: 21px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+    line-height: 1.4;
+}
+
+.main .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+
+    font-size: 0;
+    border: none;
+    background: transparent;
+
+    width: 100px;
+    height: 100px;
+    border-top: 5px solid #f00;
+    border-left: 5px solid #f00;
+    opacity: 0.3;
+}
+
+.main .slick-arrow:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.main .slick-prev {
+    margin: 0 0 0 -40%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.main .slick-next {
+    margin: 0 0 0 40%;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.main .slick-dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main .slick-dots button {
+    display: none;
+}
+
+.main .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 6px;
+    background: #333;
+    margin: 0 3px;
+}
+
+.main .slick-dots li::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 0;
+    background: #ff0;
+}
+
+.main .slick-dots li.slick-active::after {
+    width: 100%;
+    transition: 2s;
+}
+
+.main .wheel {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+
+.main .wheel span {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 10px;
+    background: #fff;
+    animation: wheeldown 1s infinite;
+}
+
+@keyframes wheeldown {
+    to {
+        top: 15px;
+    }
+}

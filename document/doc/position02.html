@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position02</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/position02.css">
+</head>
+<body>
+   <nav>
+       <ul>
+           <li>아우터</li>
+           <li>상의</li>
+           <li>하의</li>
+           <li>신발</li>
+           <li>악세사리</li>
+       </ul>
+   </nav>
+
+   <div class="open">
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+    </div>
+    
+    <script>
+        document.querySelector('.open').addEventListener('click',function(){
+            document.querySelector('nav').classList.toggle('m');
+            this.classList.toggle('m');
+        })
+    </script>
+</body>
+</html>
